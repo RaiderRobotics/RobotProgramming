@@ -5,18 +5,20 @@ Upon reflection, it probably isn't even worth learning SimpleRobot. Just proceed
 
 **:boom: Structure:**
 
-```
-//1. you must have this package
-package edu.wpi.first.wpilibj.templates;
+:one:  you must have this package<br>
+`package edu.wpi.first.wpilibj.templates;`
 
-//2. Imports. Better to list them than to use 
+:two: Imports.<br>
+```
 //   import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.SimpleRobot;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
+```
 
-//3. main class extends base class
+:three: main class extends base class
+```
 public class SimpleRobot1 extends SimpleRobot {
 
    //4. Declare global variables. Don’t initialize them here.
