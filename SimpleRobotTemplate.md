@@ -9,7 +9,8 @@ Upon reflection, it probably isn't even worth learning SimpleRobot. Just proceed
 `package edu.wpi.first.wpilibj.templates;`
 
 :two: Imports.<br>
-```//   import edu.wpi.first.wpilibj.*;
+```
+//   import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.SimpleRobot;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.Joystick;
@@ -32,15 +33,18 @@ import edu.wpi.first.wpilibj.RobotDrive;
    }    
 ```
 
-    //6. function for autonomous mode
+:six: function for autonomous mode
+```
     public void autonomous() {
         chassis.setSafetyEnabled(false);
         while(isAutonomous() && isEnabled()) {
 	   chassis.drive(0.9,0.0);           
         }
     }
+```
 
-    //7. function for tele-op mode
+:seven: function for tele-op mode
+```
     public void operatorControl() {
         chassis.setSafetyEnabled(true);
         while (isOperatorControl() && isEnabled()) {
@@ -48,11 +52,7 @@ import edu.wpi.first.wpilibj.RobotDrive;
 	   Timer.delay(0.01);
         }
     }
-
-    //8. function for test mode
-    public void test() {
-         
-    }
-}
 ```
+
+:eight: other functions (test mode, etc).
 
