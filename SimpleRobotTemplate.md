@@ -54,5 +54,8 @@ import edu.wpi.first.wpilibj.RobotDrive;
     }
 ```
 
-:eight: other functions (test mode, etc).
+:eight: other functions (test mode, etc).<br>
+Close main class
+
+`}`
 
