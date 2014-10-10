@@ -9,7 +9,7 @@ WPI-programming
 
 :boom: [Main WPI Javadoc classes](http://robotics.francisparker.org/javadoc/edu/wpi/first/wpilibj/package-summary.html)
 
-[Complete WPI Javadoc 2014](http://robotics.francisparker.org/javadoc/overview-summary.html)
+:sparkles: [Complete WPI Javadoc 2014](http://robotics.francisparker.org/javadoc/overview-summary.html)
 
 :boom:[Iterative class outline](http://users.wpi.edu/~bamiller/WPIRoboticsLibrary/dd/d91/class_iterative_robot.html)  (2008, but still a lot of useful info. Click on the links at the top)
 
