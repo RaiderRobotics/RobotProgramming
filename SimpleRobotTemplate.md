@@ -1,0 +1,54 @@
+If you use the SimpleRobot base class, you'll only have one file.
+Upon reflection, it probably isn't even worth learning SimpleRobot. Just proceed to IterativeRobot.
+
+----
+
+**:boom: Structure:**
+
+```
+//1. you must have this package
+package edu.wpi.first.wpilibj.templates;
+
+//2. Imports. Better to list them than to use 
+//   import edu.wpi.first.wpilibj.*;
+import edu.wpi.first.wpilibj.SimpleRobot;
+import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.RobotDrive;
+
+//3. main class extends base class
+public class SimpleRobot1 extends SimpleRobot {
+
+   //4. Declare global variables. Don’t initialize them here.
+    Joystick joyLeft;
+    RobotDrive chassis;
+
+   //5. Initialize variables. It’s safer to do this here than in a constructor.
+   void robotInit() { 
+      chassis = new RobotDrive(1,2);
+   }    
+
+    //6. function for autonomous mode
+    public void autonomous() {
+        chassis.setSafetyEnabled(false);
+        while(isAutonomous() && isEnabled()) {
+	   chassis.drive(0.9,0.0);           
+        }
+    }
+
+    //7. function for tele-op mode
+    public void operatorControl() {
+        chassis.setSafetyEnabled(true);
+        while (isOperatorControl() && isEnabled()) {
+	   chassis.arcadeDrive(joyLeft);
+	   Timer.delay(0.01);
+        }
+    }
+
+    //8. function for test mode
+    public void test() {
+         
+    }
+}
+```
+
