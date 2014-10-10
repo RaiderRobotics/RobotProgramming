@@ -55,4 +55,4 @@ or `driveTrain.setInvertedMotor(motor1, true);`
 `armTimer.reset();`
 
 
-
+Iterative Robot has a watchdog that must befed at a certain interval.
