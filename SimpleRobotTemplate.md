@@ -30,6 +30,7 @@ import edu.wpi.first.wpilibj.RobotDrive;
 ```
    void robotInit() { 
       chassis = new RobotDrive(1,2);
+      joyLeft = new Joystick(1);
    }    
 ```
 
@@ -38,7 +39,7 @@ import edu.wpi.first.wpilibj.RobotDrive;
     public void autonomous() {
         chassis.setSafetyEnabled(false);
         while(isAutonomous() && isEnabled()) {
-	   chassis.drive(0.9,0.0);           
+	      chassis.drive(0.9,0.0);           
         }
     }
 ```
@@ -48,8 +49,8 @@ import edu.wpi.first.wpilibj.RobotDrive;
     public void operatorControl() {
         chassis.setSafetyEnabled(true);
         while (isOperatorControl() && isEnabled()) {
-	   chassis.arcadeDrive(joyLeft);
-	   Timer.delay(0.01);
+	      chassis.arcadeDrive(joyLeft);
+	      Timer.delay(0.01);
         }
     }
 ```
