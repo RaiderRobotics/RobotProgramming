@@ -9,26 +9,28 @@ Upon reflection, it probably isn't even worth learning SimpleRobot. Just proceed
 `package edu.wpi.first.wpilibj.templates;`
 
 :two: Imports.<br>
-```
-//   import edu.wpi.first.wpilibj.*;
+```//   import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.SimpleRobot;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
 ```
 
-:three: main class extends base class
-```
-public class SimpleRobot1 extends SimpleRobot {
+:three: main class extends base class<br>
+`public class SimpleRobot1 extends SimpleRobot {`
 
-   //4. Declare global variables. Don’t initialize them here.
+:four: Declare global variables. Don’t initialize them here.
+```
     Joystick joyLeft;
     RobotDrive chassis;
+```
 
-   //5. Initialize variables. It’s safer to do this here than in a constructor.
+:five: Initialize variables in robotInit(). It’s safer to do this here than in a constructor.
+```
    void robotInit() { 
       chassis = new RobotDrive(1,2);
    }    
+```
 
     //6. function for autonomous mode
     public void autonomous() {
