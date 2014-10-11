@@ -4,8 +4,8 @@ RobotProgramming
 Information for how to program the FRC robot using the WPI Java libraries.
 
 
-WPI-programming
-===============
+###Links for WPI-programming
+
 
 :boom: [Main WPI Javadoc classes](http://robotics.francisparker.org/javadoc/edu/wpi/first/wpilibj/package-summary.html)
 
@@ -15,4 +15,6 @@ WPI-programming
 
 Note: check this info with the Javadoc to see if anything has changed in the past 6 years!
 
+:boom: Source code (to come)
 
+:boom: [Raider Robotics Google Drive docs](https://drive.google.com/#folders/0B9zgWFmhKHBkV3g5cmFXeXBhTjg)
