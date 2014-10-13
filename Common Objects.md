@@ -15,7 +15,7 @@ Other things to do with motor objects: `motor1.enableDeadbandElimination(true);`
 
 `drivetrain.setSafetyEnabled(false);`	for autonomous mode (SimpleRobot)
 
-`drivetrain.drive(speed, curve);`		Speed = -1.0 ó +1.0;  Curve is the same
+`drivetrain.drive(speed, curve);`		Speed = -1.0 to +1.0;  Curve is the same
 
 `drivetrain.arcadeDrive(joystickLeft);`
 
@@ -55,4 +55,4 @@ or `driveTrain.setInvertedMotor(motor1, true);`
 `armTimer.reset();`
 
 
-Iterative Robot has a watchdog that must befed at a certain interval.
+Iterative Robot has a watchdog that must be fed at a certain interval or it stops the motors. Seriously.
