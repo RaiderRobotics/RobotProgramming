@@ -16,3 +16,11 @@ Information for how to program the FRC robot using the WPI Java libraries.
 :boom: WPI Java Source code (to come)
 
 :boom: Our Raider Robotics [Google Drive](https://drive.google.com/#folders/0B9zgWFmhKHBkV3g5cmFXeXBhTjg) docs.  *Note that these are private, whereas Github is public.*
+
+
+----------
+
+
+Iterative programming help:
+
+http://wiki.team1640.com/images/3/3b/IntroProgrammingFRCRobots2012.pdf
