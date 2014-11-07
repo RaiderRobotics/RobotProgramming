@@ -6,6 +6,9 @@ Information for how to program the FRC robot using the WPI Java libraries.
 
 ###Links for WPI-programming
 
+* http://www.604robotics.com/wordpress/wp-content/uploads/2012/09/WPI-Robotics-Library-Users-Guide.pdf
+ 
+* wiki.team1640.com/images/3/3b/IntroProgrammingFRCRobots2012.pdf
 
 :boom: [Main WPI Javadoc classes](http://robotics.francisparker.org/javadoc/edu/wpi/first/wpilibj/package-summary.html)
 
