@@ -22,6 +22,7 @@ public class BasicRobot extends IterativeRobot {
     //global variables
     private int driveState = ARCADE;
 
+    //create global objects here
     public void robotInit() {
         motor1 = new Victor(1);
         motor2 = new Victor(2);
@@ -34,10 +35,9 @@ public class BasicRobot extends IterativeRobot {
 
     public void teleopInit() {
         Watchdog.getInstance().feed();
-        //chassis.setSafetyEnabled(false);
     }
 
-    // called at 50Hz (every 20ms).
+    // called at 50Hz (every 20ms). This method must not take more than 20ms to complete!
     public void teleopPeriodic() {
         // feed the watchdog
         Watchdog.getInstance().feed();
@@ -50,27 +50,28 @@ public class BasicRobot extends IterativeRobot {
         }
 
         //check for button press to switch mode. Use two buttons to prevent bounce.
-//		if (joyLeftBtn1.get()) driveState = ARCADE;
-//		if (joyLeftBtn2.get()) driveState = TANK;
+//		if (joyLeftBtn2.get()) driveState = ARCADE;
+//		if (joyLeftBtn3.get()) driveState = TANK;
         //Since joystick button is not loaded ....
-        boolean button1 = stickL.getRawButton(1);
         boolean button2 = stickL.getRawButton(2);
-        if (button1) {
+        boolean button3 = stickL.getRawButton(3);
+        if (button2) {
             driveState = ARCADE;
         }
-        if (button2) {
+        if (button3) {
             driveState = TANK;
         }
-
     }
 
     public void autonomousInit() {
+        chassis.setSafetyEnabled(false); // or better yet: feed the watchdog regularly
     }
 
     public void autonomousPeriodic() {
     }
 
     public void autonomousDisabled() {
+        //turn off motors here
     }
 }
 
@@ -116,9 +117,6 @@ public class BasicRobot extends IterativeRobot {
  * a square pattern during the autonomous period, then during each
  * autonomousPeriodic method call the program would keep track of which part of
  * the square it is currently drawing and if it should advance to the next part.
- *
- * http://www.604robotics.com/wordpress/wp-content/uploads/2012/09/WPI-Robotics-Library-Users-Guide.pdf
- * wiki.team1640.com/images/3/3b/IntroProgrammingFRCRobots2012.pdf
  *
  ******
  */
