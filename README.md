@@ -3,7 +3,7 @@ RobotProgramming
 
 Information for how to program the FRC robot using the WPI Java libraries.
 
-We need to order 4 of these ASAP (but from VEX).  yourduino.com/sunshop2/index.php?l=product_detail&p=202
+:zap: We need to order 4 of these ASAP (but from VEX).  http://yourduino.com/sunshop2/index.php?l=product_detail&p=202
 
 ###Links for WPI-programming
 
